@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --delta-black: #050505;
+  --delta-near-black: #0d0d0f;
+  --delta-orange: #f56a0a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--delta-black);
+  color: #d9d9d9;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic), system-ui, sans-serif;
+}
+
+[dir="ltr"] body {
+  font-family: var(--font-english), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(245, 106, 10, 0.35);
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
