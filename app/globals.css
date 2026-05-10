@@ -1,11 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --delta-black: #050505;
-  --delta-near-black: #0d0d0f;
-  --delta-orange: #f56a0a;
+@theme {
+  --color-delta-softGray: #d9d9d9;
+  --color-delta-lightGray: #cfcfd1;
+  --color-delta-orange: #f56a0a;
+  --color-delta-charcoal: #232326;
+  --color-delta-nearBlack: #0d0d0f;
+  --color-delta-nearBlackSoft: #1a1a1e;
+  --color-delta-black: #050505;
+  --color-delta-white: #ffffff;
+
+  --color-delta-success: #1a7f5a;
+  --color-delta-warning: #f59e0b;
+  --color-delta-error: #d93025;
+
+  --color-delta-lightBg: #f5f5f7;
+  --color-delta-lightMuted: #6b6b73;
+
+  --shadow-glow: 0 0 80px rgba(245, 106, 10, 0.18);
+  --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -14,24 +27,40 @@
 
 html {
   scroll-behavior: smooth;
+  background: #050505;
 }
 
 body {
-  background: var(--delta-black);
+  margin: 0;
+  background: #050505;
   color: #d9d9d9;
 }
 
-[dir="rtl"] body {
+[dir="rtl"] {
   font-family: var(--font-arabic), system-ui, sans-serif;
 }
 
-[dir="ltr"] body {
+[dir="ltr"] {
   font-family: var(--font-english), system-ui, sans-serif;
 }
 
 ::selection {
   background: rgba(245, 106, 10, 0.35);
   color: #ffffff;
+}
+
+.bg-delta-radial {
+  background-image: radial-gradient(
+    circle at top,
+    rgba(245, 106, 10, 0.18),
+    transparent 35%
+  );
+}
+
+.bg-delta-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
 }
 
 @media (prefers-reduced-motion: reduce) {

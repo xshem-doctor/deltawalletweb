@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "services": "Services",
+    "howItWorks": "How it works",
+    "faq": "FAQ",
+    "download": "Download"
+  },
+  "hero": {
+    "eyebrow": "USDT wallet for real daily use",
+    "title": "Your wallet for USDT, payments, and digital services",
+    "subtitle": "Send, receive, and use USDT to buy gift cards, eSIMs, phone refills, and more.",
+    "primaryCta": "Download Android APK",
+    "secondaryCta": "Explore services"
+  },
+  "trust": {
+    "bep20": "BEP20 USDT",
+    "services": "Digital services",
+    "languages": "English & Arabic",
+    "history": "Clear payment history"
+  },
+  "overview": {
+    "title": "More than a balance screen",
+    "subtitle": "Delta Wallet is designed for users who want to use USDT practically, not just store it.",
+    "wallet": "Receive and manage USDT",
+    "send": "Send supported payments",
+    "services": "Buy gift cards, eSIMs, and refills",
+    "track": "Track deposits, withdrawals, and orders"
+  },
+  "services": {
+    "title": "Use your balance inside the app",
+    "subtitle": "Turn your wallet balance into useful digital products.",
+    "giftCards": "Gift Cards",
+    "giftCardsText": "Google Play, PUBG Mobile, Jawaker, Free Fire, Steam, and more.",
+    "esim": "eSIM",
+    "esimText": "Buy data plans and receive activation details.",
+    "phoneRefill": "Phone Refills",
+    "phoneRefillText": "Top up supported mobile numbers.",
+    "coming": "More coming",
+    "comingText": "Regional providers and local options where available."
+  },
+  "how": {
+    "title": "How it works",
+    "subtitle": "A simple flow from wallet balance to delivered service.",
+    "step1": "Create your account",
+    "step2": "Receive or add USDT",
+    "step3": "Choose a service",
+    "step4": "Pay from your balance",
+    "step5": "Get your code or activation details"
+  },
+  "download": {
+    "title": "Start with Delta Wallet on Android",
+    "subtitle": "Download the APK and install the app. Google Play support can be added later.",
+    "button": "Download APK",
+    "coming": "Google Play coming soon"
+  },
+  "footer": {
+    "description": "A practical USDT wallet for payments and digital services.",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "risk": "Risk Notice"
+  },
+
+  "downloadDialog": {
+  "title": "Thanks for downloading Delta Wallet",
+  "text": "The APK download should start now. After installation, open the app and create your account.",
+  "tip": "If Android asks for permission, allow installation from your browser, then continue installing Delta Wallet.",
+  "close": "Got it"
+},
+"faqPage": {
+  "eyebrow": "FAQ",
+  "title": "Questions before you start?",
+  "subtitle": "Find clear answers about Delta Wallet, USDT, downloads, services, and security.",
+  "searchPlaceholder": "Search questions...",
+  "noResults": "No matching questions found.",
+  "all": "All",
+  "categories": {
+    "general": "General",
+    "wallet": "Wallet",
+    "services": "Services",
+    "download": "Download",
+    "security": "Security"
+  },
+  "reactionTitle": "Was this answer useful?",
+  "yes": "Useful",
+  "no": "Not clear",
+  "thanks": "Thanks for your feedback.",
+  "items": {
+    "whatIsDelta": {
+      "question": "What is Delta Wallet?",
+      "answer": "Delta Wallet is a practical USDT wallet designed for payments and digital services. It lets users receive, manage, and use USDT for services such as gift cards, eSIMs, and phone refills."
+    },
+    "isExchange": {
+      "question": "Is Delta Wallet an exchange?",
+      "answer": "No. Delta Wallet is not designed as a trading exchange. The focus is wallet balance, payments, and using USDT for practical digital services."
+    },
+    "supportedCurrency": {
+      "question": "Which currency does Delta Wallet support?",
+      "answer": "The first version focuses on USDT. The app may support more assets later, but the current product direction is simple USDT usage."
+    },
+    "depositsWithdrawals": {
+      "question": "How do deposits and withdrawals work?",
+      "answer": "Users can receive USDT to their wallet address and request withdrawals to supported addresses. Transaction status and balances should be shown clearly inside the app."
+    },
+    "giftCards": {
+      "question": "Can I buy gift cards with USDT?",
+      "answer": "Yes. Delta Wallet is designed to let users spend their balance on digital products such as Google Play, PUBG Mobile, Jawaker, Free Fire, Steam, and other supported cards, depending on availability."
+    },
+    "esim": {
+      "question": "How does eSIM delivery work?",
+      "answer": "After purchase, the user receives activation details such as a QR code, activation code, or setup instructions. Availability depends on the provider and country."
+    },
+    "serviceUnavailable": {
+      "question": "Why is a service unavailable sometimes?",
+      "answer": "Some services depend on country, provider inventory, network support, or product availability. Delta Wallet should show availability clearly before payment."
+    },
+    "apkSafe": {
+      "question": "Is the APK safe to install?",
+      "answer": "You should only download the APK from the official Delta Wallet website. Later, a checksum and Google Play listing can help users verify the file."
+    },
+    "googlePlay": {
+      "question": "Will Delta Wallet be available on Google Play?",
+      "answer": "Google Play support can be added later. For the first version, the website can provide a direct Android APK download."
+    },
+    "security": {
+      "question": "How does Delta Wallet handle security?",
+      "answer": "The product should avoid confusing users and show clear balance, locked balance, payment status, and order records. Crypto transactions may be irreversible, so users should always review details before confirming."
+    },
+    "paymentDelay": {
+      "question": "What happens if payment succeeds but delivery is delayed?",
+      "answer": "The order status should remain visible in the app. If provider delivery is delayed, the user should be able to refresh the order or contact support."
+    }
+  }
+}
+  
+}
