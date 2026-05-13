@@ -6,6 +6,7 @@ import Container from "@/components/shared/Container";
 import DeltaButton from "@/components/shared/DeltaButton";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { navigationItems } from "@/config/navigation";
+import { siteConfig } from "@/config/site";
 
 export default function Header() {
   const t = useTranslations("nav");
@@ -35,9 +36,9 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-            <DeltaButton href={`/${locale}#download`} className="hidden sm:inline-flex">
-              {t("download")}
-            </DeltaButton>
+          <DeltaButton href={siteConfig.apkUrl} className="hidden sm:inline-flex">
+            {t("download")}
+          </DeltaButton>
         </div>
       </Container>
     </header>

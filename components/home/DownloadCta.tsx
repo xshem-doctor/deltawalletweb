@@ -33,7 +33,7 @@ export default function DownloadCta() {
   ];
 
   return (
-    <section id="download" className="scroll-mt-24 border-t border-white/10 py-16 md:py-20">
+    <div className="border-t border-white/10 py-16 md:py-20">
       <Container>
         <div className="rounded-3xl border border-white/10 bg-delta-nearBlackSoft px-6 py-8 md:px-10 md:py-10">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
@@ -94,6 +94,6 @@ export default function DownloadCta() {
           </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 }
