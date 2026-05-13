@@ -17,8 +17,7 @@
   --color-delta-lightBg: #f5f5f7;
   --color-delta-lightMuted: #6b6b73;
 
-  --shadow-glow: 0 0 80px rgba(245, 106, 10, 0.18);
-  --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 18px 45px rgba(0, 0, 0, 0.35);
 }
 
 * {
@@ -26,8 +25,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
   background: #050505;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -50,17 +49,17 @@ body {
 }
 
 .bg-delta-radial {
-  background-image: radial-gradient(
-    circle at top,
-    rgba(245, 106, 10, 0.18),
-    transparent 35%
-  );
+  background-image: none;
 }
 
 .bg-delta-grid {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-image: none;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
