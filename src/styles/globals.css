@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-delta-softGray: #d9d9d9;
+  --color-delta-lightGray: #cfcfd1;
+  --color-delta-orange: #f56a0a;
+  --color-delta-charcoal: #232326;
+  --color-delta-nearBlack: #0d0d0f;
+  --color-delta-nearBlackSoft: #1a1a1e;
+  --color-delta-black: #050505;
+  --color-delta-white: #ffffff;
+  --color-delta-success: #1a7f5a;
+  --color-delta-warning: #f59e0b;
+  --color-delta-error: #d93025;
+  --color-delta-lightBg: #f5f5f7;
+  --color-delta-lightMuted: #6b6b73;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #050505;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+  color: #d9d9d9;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+[dir="rtl"] body {
+  font-family: Cairo, Tahoma, Arial, sans-serif;
+}
+
+::selection {
+  background: rgba(245, 106, 10, 0.35);
+  color: #ffffff;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
