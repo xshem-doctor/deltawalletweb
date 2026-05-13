@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Delta Cairo";
+  src: url("/fonts/cairo-regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Delta Cairo";
+  src: url("/fonts/cairo-medium.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Delta Cairo";
+  src: url("/fonts/cairo-medium.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Delta Cairo";
+  src: url("/fonts/cairo-bold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
 @theme {
   --color-delta-softGray: #d9d9d9;
   --color-delta-lightGray: #cfcfd1;
@@ -33,7 +65,7 @@ body {
 }
 
 [dir="rtl"] body {
-  font-family: Cairo, Tahoma, Arial, sans-serif;
+  font-family: "Delta Cairo", Tahoma, Arial, sans-serif;
 }
 
 ::selection {
