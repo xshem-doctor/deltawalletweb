@@ -16,7 +16,6 @@ type PaymentRequest = {
 type CheckoutState = "loading" | "ready" | "opening" | "success" | "error";
 
 const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, "") ||
   "https://api.deltawallet.app";
 
 export default function PayPage() {
