@@ -10,11 +10,13 @@ import RiskPage from "./routes/RiskPage";
 import SecurityPage from "./routes/SecurityPage";
 import ServicesPage from "./routes/ServicesPage";
 import TermsPage from "./routes/TermsPage";
+import PayPage from "./routes/PayPage";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/en" replace />} />
+      <Route path="/pay" element={<PayPage />} />
       <Route path="/:locale" element={<LocaleLayout />}>
         <Route index element={<HomePage />} />
         <Route path="product" element={<ProductPage />} />
