@@ -10,7 +10,7 @@ export default function Header() {
   const { locale, t } = useI18n();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-delta-black">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-delta-black/75 backdrop-blur-xl">
       <Container className="flex h-16 items-center justify-between gap-4 sm:h-20">
         <Link to={`/${locale}`} className="flex shrink-0 items-center gap-3">
           <img
@@ -28,7 +28,7 @@ export default function Header() {
             <Link
               key={item.labelKey}
               to={`/${locale}${item.href}`}
-              className="text-sm text-delta-lightGray/70 transition hover:text-white"
+            className="text-sm font-medium text-delta-lightGray/70 transition hover:text-white"
             >
               {t(`nav.${item.labelKey}`)}
             </Link>

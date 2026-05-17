@@ -81,6 +81,118 @@ export const translations = {
         "Supported swaps",
         "Order notifications",
       ],
+      heroMeta: [
+        "Security-focused controls",
+        "USDT · BNB · BTCB on BSC",
+        "Cards and digital services",
+      ],
+      heroChips: [
+        {
+          title: "$26.98 USDT",
+          body: "Visible available balance",
+        },
+        {
+          title: "Send review",
+          body: "Confirm address, fee, and amount",
+        },
+      ],
+      screenFeatures: [
+        {
+          tag: "Wallet",
+          title: "Your assets, balance, and quick actions in one screen.",
+          body: "Track supported assets on BNB Smart Chain at a glance. Send, receive, swap, and buy are available from a focused wallet home screen.",
+          bullets: [
+            {
+              title: "Clear balances",
+              body: "View supported asset amounts and estimated USD values where available.",
+            },
+            {
+              title: "Four core actions",
+              body: "Swap, buy, receive, and send stay close to the wallet balance.",
+            },
+            {
+              title: "Notifications",
+              body: "Review app activity and transaction updates from the same account.",
+            },
+          ],
+        },
+        {
+          tag: "Buy",
+          title: "Buy USDT through supported provider flows.",
+          body: "Create buy orders through available local or external payment options. The app keeps order state, payment notes, and confirmation details visible.",
+          bullets: [
+            {
+              title: "Available options",
+              body: "Payment choices are presented only when supported by the configured provider flow.",
+            },
+            {
+              title: "Payment instructions",
+              body: "Orders can include notes, expiry, and status checks before USDT is credited.",
+            },
+            {
+              title: "Status visibility",
+              body: "Users can review whether an order is pending, confirmed, expired, or failed.",
+            },
+          ],
+        },
+        {
+          tag: "Swap",
+          title: "Swap supported assets with a clear rate and gas estimate.",
+          body: "Quote supported pairs such as USDT and BNB, review what you pay and receive, then continue only after the details are clear.",
+          bullets: [
+            {
+              title: "Quick amount controls",
+              body: "Use amount shortcuts for faster sizing inside the swap flow.",
+            },
+            {
+              title: "Rate preview",
+              body: "See the estimated rate and network cost before continuing.",
+            },
+            {
+              title: "BSC support",
+              body: "Swap paths depend on BNB Smart Chain liquidity and provider response.",
+            },
+          ],
+        },
+        {
+          tag: "Send",
+          title: "Confirm every send with a structured review.",
+          body: "Recipient, amount, network, fee, and final receive amount are shown before submission so users can check details carefully.",
+          bullets: [
+            {
+              title: "Step-by-step review",
+              body: "The flow guides users through recipient, amount, and review screens.",
+            },
+            {
+              title: "Editable destination",
+              body: "Destination details can be checked before the final send action.",
+            },
+            {
+              title: "Transaction warning",
+              body: "Users are reminded that blockchain transactions may be irreversible.",
+            },
+          ],
+        },
+        {
+          tag: "Cards and services",
+          title: "Use wallet balance with cards and digital services.",
+          body: "The app connects wallet balance with provider-backed digital services and card-related flows where available.",
+          bullets: [
+            {
+              title: "Card network choice",
+              body: "Card flows can present available networks such as Visa or Mastercard where supported.",
+            },
+            {
+              title: "Service hub",
+              body: "Browse supported digital services such as eSIMs, phone refills, and temporary SMS numbers.",
+            },
+            {
+              title: "Provider-backed delivery",
+              body: "Availability, pricing, and delivery depend on the selected provider and region.",
+            },
+          ],
+        },
+      ],
       productTitle: "A wallet built for everyday use",
       productSubtitle:
         "Delta Wallet focuses on clear balances, direct actions, and account-based crypto usage without unnecessary complexity.",
@@ -120,12 +232,23 @@ export const translations = {
         },
       ],
       howTitle: "How it works",
+      howSubtitle:
+        "Verify your account, fund the wallet, and start using supported wallet actions and services.",
+      howStepTitles: [
+        "Create account",
+        "Fund wallet",
+        "Use actions",
+        "Review history",
+      ],
       howSteps: [
         "Create an account and verify your email.",
         "Receive supported assets to your Delta Wallet address or create a supported buy order.",
         "Use wallet actions such as send, swap, or service purchase.",
         "Review status, order details, and history inside the app.",
       ],
+      downloadTag: "Download",
+      installGuide: "Install guide",
+      apkMeta: "Official Android APK",
       securityTitle: "Security without overpromising",
       securitySubtitle:
         "Delta Wallet uses layered controls to reduce account and transaction risk, while users remain responsible for device safety and transaction details.",
@@ -598,6 +721,118 @@ export const translations = {
         "تبديل مدعوم",
         "إشعارات الطلبات",
       ],
+      heroMeta: [
+        "إعدادات تركّز على الأمان",
+        "USDT · BNB · BTCB على BSC",
+        "بطاقات وخدمات رقمية",
+      ],
+      heroChips: [
+        {
+          title: "$26.98 USDT",
+          body: "رصيد متاح وواضح",
+        },
+        {
+          title: "مراجعة الإرسال",
+          body: "تأكيد العنوان والرسوم والمبلغ",
+        },
+      ],
+      screenFeatures: [
+        {
+          tag: "المحفظة",
+          title: "أصولك ورصيدك والإجراءات السريعة في شاشة واحدة.",
+          body: "تابع الأصول المدعومة على شبكة BNB Smart Chain بوضوح. الإرسال والاستلام والتبديل والشراء قريبة من شاشة المحفظة الرئيسية.",
+          bullets: [
+            {
+              title: "أرصدة واضحة",
+              body: "اعرض كميات الأصول المدعومة وقيمتها التقديرية بالدولار عند توفرها.",
+            },
+            {
+              title: "أربعة إجراءات أساسية",
+              body: "التبديل والشراء والاستلام والإرسال تبقى قريبة من رصيد المحفظة.",
+            },
+            {
+              title: "إشعارات",
+              body: "راجع نشاط التطبيق وتحديثات المعاملات من نفس الحساب.",
+            },
+          ],
+        },
+        {
+          tag: "الشراء",
+          title: "اشترِ USDT عبر مسارات المزودين المدعومة.",
+          body: "أنشئ طلبات شراء من خلال خيارات دفع محلية أو خارجية متاحة. يحافظ التطبيق على حالة الطلب وملاحظات الدفع وتفاصيل التأكيد بشكل واضح.",
+          bullets: [
+            {
+              title: "خيارات متاحة",
+              body: "تظهر خيارات الدفع فقط عندما تكون مدعومة من مسار المزود المفعّل.",
+            },
+            {
+              title: "تعليمات الدفع",
+              body: "يمكن أن تتضمن الطلبات ملاحظات وصلاحية ومتابعة حالة قبل شحن USDT.",
+            },
+            {
+              title: "وضوح الحالة",
+              body: "يمكن للمستخدم معرفة هل الطلب قيد الانتظار أو مؤكد أو منتهي أو فاشل.",
+            },
+          ],
+        },
+        {
+          tag: "التبديل",
+          title: "بدّل الأصول المدعومة مع سعر ورسوم شبكة واضحة.",
+          body: "احصل على عرض لأزواج مدعومة مثل USDT وBNB، وراجع ما ستدفعه وما ستستلمه قبل المتابعة.",
+          bullets: [
+            {
+              title: "اختصارات المبلغ",
+              body: "استخدم اختصارات سريعة لتحديد الحجم داخل مسار التبديل.",
+            },
+            {
+              title: "معاينة السعر",
+              body: "شاهد السعر التقديري وتكلفة الشبكة قبل المتابعة.",
+            },
+            {
+              title: "دعم BSC",
+              body: "تعتمد مسارات التبديل على سيولة BNB Smart Chain واستجابة المزود.",
+            },
+          ],
+        },
+        {
+          tag: "الإرسال",
+          title: "أكّد كل عملية إرسال من خلال مراجعة منظمة.",
+          body: "يظهر المستلم والمبلغ والشبكة والرسوم والمبلغ النهائي قبل الإرسال حتى يتمكن المستخدم من مراجعة التفاصيل بعناية.",
+          bullets: [
+            {
+              title: "مراجعة خطوة بخطوة",
+              body: "يوجه المسار المستخدم عبر شاشات المستلم والمبلغ والمراجعة.",
+            },
+            {
+              title: "وجهة قابلة للتدقيق",
+              body: "يمكن مراجعة تفاصيل الوجهة قبل إجراء الإرسال النهائي.",
+            },
+            {
+              title: "تنبيه المعاملة",
+              body: "يتم تذكير المستخدم بأن معاملات البلوكشين قد تكون غير قابلة للعكس.",
+            },
+          ],
+        },
+        {
+          tag: "البطاقات والخدمات",
+          title: "استخدم رصيد المحفظة مع البطاقات والخدمات الرقمية.",
+          body: "يربط التطبيق رصيد المحفظة بخدمات رقمية مدعومة من مزودين ومسارات مرتبطة بالبطاقات عند توفرها.",
+          bullets: [
+            {
+              title: "اختيار شبكة البطاقة",
+              body: "يمكن لمسارات البطاقات عرض الشبكات المتاحة مثل Visa أو Mastercard عند دعمها.",
+            },
+            {
+              title: "مركز خدمات",
+              body: "تصفح خدمات رقمية مدعومة مثل eSIM وشحن الهاتف وأرقام SMS المؤقتة.",
+            },
+            {
+              title: "تنفيذ عبر مزودين",
+              body: "يعتمد التوفر والسعر والتسليم على المزود والمنطقة المحددين.",
+            },
+          ],
+        },
+      ],
       productTitle: "محفظة مصممة للاستخدام اليومي",
       productSubtitle:
         "تركز Delta Wallet على وضوح الأرصدة وسهولة الإجراءات واستخدام الكريبتو من خلال حساب بسيط دون تعقيد غير ضروري.",
@@ -637,12 +872,23 @@ export const translations = {
         },
       ],
       howTitle: "كيف يعمل",
+      howSubtitle:
+        "أكّد حسابك واشحن المحفظة وابدأ باستخدام إجراءات المحفظة والخدمات المدعومة.",
+      howStepTitles: [
+        "إنشاء الحساب",
+        "شحن المحفظة",
+        "استخدام الإجراءات",
+        "مراجعة السجل",
+      ],
       howSteps: [
         "أنشئ حسابك وأكّد بريدك الإلكتروني.",
         "استقبل الأصول المدعومة على عنوان Delta Wallet أو أنشئ طلب شراء مدعوم.",
         "استخدم إجراءات المحفظة مثل الإرسال أو التبديل أو شراء الخدمات.",
         "راجع الحالة وتفاصيل الطلب والسجل داخل التطبيق.",
       ],
+      downloadTag: "تحميل",
+      installGuide: "دليل التثبيت",
+      apkMeta: "ملف Android APK الرسمي",
       securityTitle: "أمان واضح دون وعود مبالغ بها",
       securitySubtitle:
         "تستخدم Delta Wallet طبقات تحكم لتقليل مخاطر الحساب والمعاملات، مع بقاء المستخدم مسؤولاً عن أمان جهازه ودقة تفاصيل العمليات.",

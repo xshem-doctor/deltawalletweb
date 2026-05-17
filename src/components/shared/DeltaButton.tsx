@@ -18,7 +18,8 @@ export default function DeltaButton({
   const classNames = cn(
     "inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-semibold transition",
     "focus:outline-none focus:ring-2 focus:ring-delta-orange focus:ring-offset-2 focus:ring-offset-delta-black",
-    variant === "primary" && "bg-delta-orange text-delta-black hover:brightness-110",
+    variant === "primary" &&
+      "bg-delta-orange text-white shadow-[0_14px_34px_rgba(245,106,10,0.35)] hover:brightness-110",
     variant === "secondary" &&
       "border border-delta-charcoal bg-delta-nearBlack text-delta-softGray hover:border-delta-orange hover:text-white",
     className
