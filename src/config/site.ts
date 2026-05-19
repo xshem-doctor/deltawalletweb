@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://deltawallet.app",
   iconPath: "/brand/delta-wallet-icon.webp",
   apkUrl:
-    "https://j8qfljajkvrcqfbe.public.blob.vercel-storage.com/deltawallet.apk",
+    "https://j8qfljajkvrcqfbe.public.blob.vercel-storage.com/deltawallet_v1.0.3.apk",
   supportEmail: "support@deltawallet.app",
   businessEmail: "business@deltawallet.app",
   securityEmail: "security@deltawallet.app",
