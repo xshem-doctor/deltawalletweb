@@ -689,6 +689,15 @@ export const translations = {
         withdraw: "Withdraw {{amount}} {{symbol}}",
         withdrawDisabled: "Complete a round first to withdraw",
       },
+      invite: {
+        title: "Your invite link",
+        body: "Share this link with friends. Their signup will use your invite code automatically.",
+        copy: "Copy",
+        copied: "Copied",
+        share: "Share",
+        shareTitle: "Delta Wallet invite",
+        shareText: "Join me on Delta Wallet.",
+      },
       tasks: {
         title: "Your tasks",
         progress: "{{current}} / {{goal}}",
@@ -1389,6 +1398,15 @@ export const translations = {
         lifetime: "إجمالي ما تم كسبه",
         withdraw: "سحب {{amount}} {{symbol}}",
         withdrawDisabled: "أكمل جولة أولاً للسحب",
+      },
+      invite: {
+        title: "رابط دعوتك",
+        body: "شارك هذا الرابط مع أصدقائك. سيتم استخدام رمز دعوتك تلقائياً عند التسجيل.",
+        copy: "نسخ",
+        copied: "تم النسخ",
+        share: "مشاركة",
+        shareTitle: "دعوة Delta Wallet",
+        shareText: "انضم إلي في Delta Wallet.",
       },
       tasks: {
         title: "مهامك",

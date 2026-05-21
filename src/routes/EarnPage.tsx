@@ -1,8 +1,13 @@
+import { Check, Copy, Share2 } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+
+import { getUserMemo } from "@/api/earn";
 import Card from "@/components/shared/Card";
 import Container from "@/components/shared/Container";
 import DownloadButton from "@/components/shared/DownloadButton";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
+import { siteConfig } from "@/config/site";
 import { useEarnApi } from "@/hooks/useEarnApi";
 import { useT } from "@/i18n/useT";
 import type {
@@ -16,6 +21,11 @@ import { fmt, fmtAmount } from "@/utils/fmt";
 export default function EarnPage() {
   const t = useT();
   const { inApp, data, loading, error, refresh, withdraw } = useEarnApi();
+  const [inviteMemo, setInviteMemo] = useState("");
+
+  useEffect(() => {
+    setInviteMemo(inApp ? getUserMemo().trim() : "");
+  }, [inApp, data]);
 
   // ---------------------------------------------------------------- Fallback when opened in a regular browser.
   if (!inApp) {
@@ -69,7 +79,7 @@ export default function EarnPage() {
 
   return (
     <>
-      <EarnHero t={t} campaign={primary} />
+      <EarnHero t={t} campaign={primary} inviteMemo={inviteMemo} />
       <section className="bg-delta-black pb-20">
         <Container>
           <div className="grid gap-6 lg:grid-cols-3">
@@ -98,8 +108,21 @@ export default function EarnPage() {
 
 type TFn = ReturnType<typeof useT>;
 
-function EarnHero({ t, campaign }: { t: TFn; campaign: CampaignStatusDto | undefined }) {
+function EarnHero({
+  t,
+  campaign,
+  inviteMemo,
+}: {
+  t: TFn;
+  campaign: CampaignStatusDto | undefined;
+  inviteMemo: string;
+}) {
   const eyebrow = t<string>("earn.hero.eyebrow");
+  const inviteUrl = useMemo(
+    () => (inviteMemo ? `${siteConfig.url}/r/${encodeURIComponent(inviteMemo)}` : ""),
+    [inviteMemo]
+  );
+
   if (!campaign) {
     return (
       <PageHero
@@ -139,9 +162,78 @@ function EarnHero({ t, campaign }: { t: TFn; campaign: CampaignStatusDto | undef
               {t<string>("earn.rounds.label")} · {roundsLabel}
             </span>
           </div>
+          {inviteUrl ? <InviteHeader t={t} inviteUrl={inviteUrl} /> : null}
         </div>
       </Container>
     </section>
+  );
+}
+
+function InviteHeader({ t, inviteUrl }: { t: TFn; inviteUrl: string }) {
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    if (!copied) return;
+    const timeout = window.setTimeout(() => setCopied(false), 1800);
+    return () => window.clearTimeout(timeout);
+  }, [copied]);
+
+  async function copyInvite() {
+    await navigator.clipboard.writeText(inviteUrl);
+    setCopied(true);
+  }
+
+  async function shareInvite() {
+    const nativeShare = (
+      navigator as Navigator & {
+        share?: (data: { title?: string; text?: string; url?: string }) => Promise<void>;
+      }
+    ).share;
+
+    if (nativeShare) {
+      await nativeShare({
+        title: t<string>("earn.invite.shareTitle"),
+        text: t<string>("earn.invite.shareText"),
+        url: inviteUrl,
+      });
+      return;
+    }
+
+    await copyInvite();
+  }
+
+  return (
+    <div className="mt-6 max-w-2xl rounded-lg border border-white/10 bg-delta-nearBlack/80 p-4">
+      <p className="text-xs font-semibold uppercase tracking-wide text-delta-lightGray/55">
+        {t<string>("earn.invite.title")}
+      </p>
+      <p className="mt-2 text-sm leading-6 text-delta-lightGray/75">
+        {t<string>("earn.invite.body")}
+      </p>
+      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="min-w-0 flex-1 rounded-md border border-white/10 bg-delta-black/60 px-3 py-2 text-sm font-medium text-white">
+          <span className="block truncate">{inviteUrl}</span>
+        </div>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={copyInvite}
+            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-white/10 bg-white/5 px-4 text-sm font-semibold text-white hover:border-delta-orange"
+          >
+            {copied ? <Check className="size-4" /> : <Copy className="size-4" />}
+            {copied ? t<string>("earn.invite.copied") : t<string>("earn.invite.copy")}
+          </button>
+          <button
+            type="button"
+            onClick={shareInvite}
+            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md bg-delta-orange px-4 text-sm font-semibold text-white hover:brightness-110"
+          >
+            <Share2 className="size-4" />
+            {t<string>("earn.invite.share")}
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -389,4 +481,3 @@ function WithdrawHistory({ t, rows }: { t: TFn; rows: RewardWithdrawDto[] }) {
     </Card>
   );
 }
-
