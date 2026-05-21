@@ -7,4 +7,9 @@ export const siteConfig = {
   supportEmail: "support@deltawallet.app",
   businessEmail: "business@deltawallet.app",
   securityEmail: "security@deltawallet.app",
+  // Backend host the Earn page calls through the Android JS bridge.
+  // Override with VITE_EARN_API_BASE at build time.
+  earnApiBase:
+    (import.meta.env.VITE_EARN_API_BASE as string | undefined) ??
+    "https://api.deltawallet.app",
 };

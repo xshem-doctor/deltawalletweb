@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import AboutPage from "./routes/AboutPage";
 import ContactPage from "./routes/ContactPage";
+import EarnPage from "./routes/EarnPage";
 import FaqPage from "./routes/FaqPage";
 import HomePage from "./routes/HomePage";
 import LocaleLayout from "./routes/LocaleLayout";
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="terms" element={<TermsPage />} />
         <Route path="privacy" element={<PrivacyPage />} />
         <Route path="risk" element={<RiskPage />} />
+        <Route path="earn" element={<EarnPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>

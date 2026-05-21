@@ -657,6 +657,67 @@ export const translations = {
         { title: "No financial advice", body: "Delta Wallet does not provide investment, trading, tax, legal, or financial advice." },
       ],
     },
+    earn: {
+      hero: {
+        eyebrow: "Earn",
+        title: "Complete tasks and earn USDT",
+        subtitle:
+          "Finish every task in the current round to receive your reward in your Delta Wallet reward balance.",
+      },
+      openInApp: {
+        title: "Open this page in the Delta Wallet app",
+        body: "Earn tasks, your reward balance, and withdraw requests only work inside the official Delta Wallet Android app.",
+        cta: "Get the app",
+      },
+      loading: "Loading your earn dashboard…",
+      error: {
+        title: "Could not load earn data",
+        retry: "Try again",
+      },
+      rounds: {
+        label: "This month",
+        progress: "{{done}} of {{cap}}",
+        unlimited: "Unlimited",
+        capReached:
+          "You've claimed every available reward this month. New rounds open at the start of next month.",
+      },
+      balance: {
+        title: "Reward balance",
+        available: "Available",
+        locked: "Locked in pending withdrawals",
+        lifetime: "Lifetime earned",
+        withdraw: "Withdraw {{amount}} {{symbol}}",
+        withdrawDisabled: "Complete a round first to withdraw",
+      },
+      tasks: {
+        title: "Your tasks",
+        progress: "{{current}} / {{goal}}",
+        done: "Done",
+        notDone: "In progress",
+        kindDeposit: "Deposit",
+        kindReferralActive: "Active invites",
+        kindSwap: "Swaps",
+        kindManual: "Manual",
+        minUnit: "Each must be at least {{amount}} USDT",
+        invitesHint:
+          "Each invite counts after the invited user makes a first deposit of at least {{amount}} USDT, held for 24 hours.",
+      },
+      history: {
+        title: "Past rounds",
+        empty: "No completed rounds yet.",
+        round: "Round {{number}}",
+      },
+      withdraws: {
+        title: "Withdraw history",
+        empty: "No withdraws yet.",
+        status: {
+          pending: "Pending admin approval",
+          approved: "Approved — credited to your wallet",
+          rejected: "Rejected",
+          cancelled: "Cancelled",
+        },
+      },
+    },
   },
   ar: {
     common: {
@@ -1296,6 +1357,67 @@ export const translations = {
         { title: "التوفر الإقليمي", body: "قد لا تتوفر بعض الخدمات في كل منطقة وقد تتغير حسب قواعد المزود." },
         { title: "لا توجد نصيحة مالية", body: "لا تقدم Delta Wallet نصائح استثمارية أو تداولية أو ضريبية أو قانونية أو مالية." },
       ],
+    },
+    earn: {
+      hero: {
+        eyebrow: "اكسب",
+        title: "أكمل المهام واكسب USDT",
+        subtitle:
+          "أنهِ جميع المهام في الجولة الحالية لتحصل على مكافأتك ضمن رصيد مكافآت Delta Wallet.",
+      },
+      openInApp: {
+        title: "افتح هذه الصفحة داخل تطبيق Delta Wallet",
+        body: "مهام الكسب ورصيد المكافآت وطلبات السحب لا تعمل إلا داخل تطبيق Delta Wallet الرسمي للأندرويد.",
+        cta: "احصل على التطبيق",
+      },
+      loading: "جارٍ تحميل لوحة الكسب…",
+      error: {
+        title: "تعذّر تحميل بيانات الكسب",
+        retry: "حاول مرة أخرى",
+      },
+      rounds: {
+        label: "هذا الشهر",
+        progress: "{{done}} من {{cap}}",
+        unlimited: "غير محدود",
+        capReached:
+          "لقد حصلت على جميع المكافآت المتاحة هذا الشهر. تُفتح جولات جديدة مع بداية الشهر القادم.",
+      },
+      balance: {
+        title: "رصيد المكافآت",
+        available: "المتاح",
+        locked: "المحجوز في طلبات سحب قيد المعالجة",
+        lifetime: "إجمالي ما تم كسبه",
+        withdraw: "سحب {{amount}} {{symbol}}",
+        withdrawDisabled: "أكمل جولة أولاً للسحب",
+      },
+      tasks: {
+        title: "مهامك",
+        progress: "{{current}} / {{goal}}",
+        done: "تم",
+        notDone: "قيد التنفيذ",
+        kindDeposit: "إيداع",
+        kindReferralActive: "دعوات نشطة",
+        kindSwap: "تبديلات",
+        kindManual: "يدوي",
+        minUnit: "كل عملية يجب ألا تقل عن {{amount}} USDT",
+        invitesHint:
+          "تُحتسب كل دعوة بعد أن يقوم المستخدم المدعوّ بإيداع أول لا يقل عن {{amount}} USDT، يُحفظ لمدة 24 ساعة.",
+      },
+      history: {
+        title: "الجولات السابقة",
+        empty: "لا توجد جولات مكتملة بعد.",
+        round: "جولة {{number}}",
+      },
+      withdraws: {
+        title: "سجل عمليات السحب",
+        empty: "لا توجد عمليات سحب بعد.",
+        status: {
+          pending: "بانتظار موافقة المسؤول",
+          approved: "تمت الموافقة — تمت إضافتها إلى محفظتك",
+          rejected: "مرفوض",
+          cancelled: "ملغى",
+        },
+      },
     },
   },
 } as const;
